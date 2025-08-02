@@ -7,7 +7,6 @@
     <title>CodeSlayer</title>
     <link rel="icon" type="image/jpg" href="img/giga.jpg">
     <link rel="stylesheet" href="style.css">
-    <script src="app.js"></script>
 </head>
 
 <body>
@@ -24,67 +23,32 @@
     </header>
    
     <section class="slider">
-    <div class="slides">
-        <div class="slide active">
-            <img src="image needed" alt="Legend of Zelda: Tears of the Kingdom">
-            <div class="caption">Legend of Zelda: Tears of the Kingdom - $69.99</div>
+    <div class="featured-slider">
+        <button class="slider-btn prev" onclick="prevFeatured()">&#10094;</button>
+        <div class="featured-main">
+            <img id="featured-main-img" src="img/TOK slider.jpg" alt="Legend of Zelda: Tears of the Kingdom" class="featured-main-img">
         </div>
-        <div class="slide">
-            <img src="image needed" alt="Ocarina of Time">
-            <div class="caption">Ocarina of Time - $19.99</div>
+        <div class="featured-details">
+            <h2 id="featured-title" class="featured-title">Legend of Zelda: Tears of the Kingdom</h2>
+            <div class="featured-screenshots" id="featured-screenshots">
+                <img src="img/OOT slider.jpg" alt="Ocarina of Time" class="featured-thumb">
+                <img src="img/BOTW slider.jpg" alt="Breath of the Wild" class="featured-thumb">
+                <img src="img/Marjora Mask Slider.jpg" alt="Majora's Mask" class="featured-thumb">
+            </div>
+            <div class="featured-tags" id="featured-tags">
+                <span class="tag">Adventure</span>
+                <span class="tag">Open World</span>
+                <span class="tag">Fantasy</span>
+                <span class="tag">Single Player</span>
+            </div>
+            <div class="featured-recommend" id="featured-recommend">
+                <span class="recommend-label">Recommended</span> because you played games tagged with
+                <span class="tag">Adventure</span>
+                <span class="tag">Open World</span>
+            </div>
+            <div id="featured-price" class="featured-price">$69.99</div>
         </div>
-        <div class="slide">
-            <img src="image needed" alt="Breath of the Wild">
-            <div class="caption">Breath of the Wild - $49.99</div>
-        </div>
-        <div class="slide">
-            <img src="image needed" alt="Majora's Mask">
-            <div class="caption">Majora's Mask - $29.99</div>
-        </div>
-        <div class="slide">
-            <img src="image needed" alt="Mech Battle">
-            <div class="caption">Mech Battle - $39.99</div>
-        </div>
-        <div class="slide">
-            <img src="image needed" alt="Pixel Quest">
-            <div class="caption">Pixel Quest - $24.99</div>
-        </div>
-        <div class="slide">
-            <img src="image needed" alt="Galaxy Racer">
-            <div class="caption">Galaxy Racer - $34.99</div>
-        </div>
-        <div class="slide">
-            <img src="image needed" alt="Call of Duty:Black Ops 6">
-            <div class="caption">Call of Duty: Black Ops 6 - $69.99</div>
-        </div>
-        <div class="slide">
-            <img src="image needed" alt="Modern Warfare">
-            <div class="caption">Call of Duty: Modern Warfare - $39.99</div>
-        </div>
-        <div class="slide">
-            <img src="image needed" alt="Black Ops">
-            <div class="caption">Call of Duty: Black Ops - $29.99</div>
-        </div>
-        <div class="slide">
-            <img src="image needed" alt="Vanguard">
-            <div class="caption">Call of Duty: Vanguard - $49.99</div>
-        </div>
-        <div class="slide">
-            <img src="image needed" alt="Space Odyssey">
-            <div class="caption">Space Odyssey - $49.99</div>
-        </div>
-        <div class="slide">
-            <img src="image needed" alt="Elden Ring">
-            <div class="caption">Elden Ring - $59.99</div>
-        </div>
-        <div class="slide">
-            <img src="image needed" alt="Halo Infinite">
-            <div class="caption">Halo Infinite - $54.99</div>
-        </div>
-        <div class="slide">
-            <img src="image needed" alt="Cyberpunk 2077">
-            <div class="caption">Cyberpunk 2077 - $39.99</div>
-        </div>
+        <button class="slider-btn next" onclick="nextFeatured()">&#10095;</button>
     </div>
 </section>
 
@@ -95,12 +59,12 @@
             <button>Shop Now</button>
          
             <section class="categories">
-        <h3>Shop by Platform</h3>
+        <h3>Featured Platform</h3>
         <div class="platforms">
-            <a href="#"><img src="img/PS5-removebg-preview.png" alt="PlayStation"></a>
-            <a href="#"><img src="img/xbox-removebg-preview.png" alt="Xbox"></a>
-            <a href="#"><img src="img/switch.png" alt="Nintendo Switch"></a>
-            <a href="#"><img src="img/PC-removebg-preview.png" alt="PC"></a>
+            <img src="img/PS5-removebg-preview.png" alt="PlayStation">
+            <img src="img/xbox-removebg-preview.png" alt="Xbox">
+            <img src="img/switch.png" alt="Nintendo Switch">
+            <img src="img/PC-removebg-preview.png" alt="PC">
         </div>
     </section>
 
@@ -113,7 +77,7 @@
                         <h4>Legend of Zelda: Tears of the Kingdom</h4>
                         <p>$69.99</p>
                         <div class="platform-icons">
-                            <img src="images/switch.png" alt="Nintendo Switch" title="Nintendo Switch" class="platform-icon">
+                            <img src="img/switch.png" alt="Nintendo Switch" title="Nintendo Switch" class="platform-icon">
                         </div>
                     </div>
                     <div id="zelda-versions" style="display:none;">
@@ -138,38 +102,38 @@
             thx :D . also the slider price also need to change if wrong :))-->
                 </div>
                 <div class="game-card">
-                    <img src="images/game2.jpg" alt="Mech Battle">
+                    <img src="img/Mech Battle.jpg" alt="Mech Battle">
                     <h4>Mech Battle</h4>
                     <p>$39.99</p>
                     <div class="platform-icons">
-                        <img src="images/xbox.png" alt="Xbox" title="Xbox" class="platform-icon">
-                        <img src="images/pc.png" alt="PC" title="PC" class="platform-icon">
+                        <img src="img/xbox-removebg-preview.png" alt="Xbox" title="Xbox" class="platform-icon">
+                        <img src="img/PC-removebg-preview.png" alt="PC" title="PC" class="platform-icon">
                     </div>
                 </div>
                 <div class="game-card">
-                    <img src="images/game3.jpg" alt="Pixel Quest">
+                    <img src="img/Pixel Quest.jpg" alt="Pixel Quest">
                     <h4>Pixel Quest</h4>
                     <p>$24.99</p>
                     <div class="platform-icons">
-                        <img src="images/ps5.png" alt="PlayStation" title="PlayStation" class="platform-icon">
-                        <img src="images/xbox.png" alt="Xbox" title="Xbox" class="platform-icon">
-                        <img src="images/pc.png" alt="PC" title="PC" class="platform-icon">
+                        <img src="img/PS5-removebg-preview.png" alt="PlayStation" title="PlayStation" class="platform-icon">
+                        <img src="img/xbox-removebg-preview.png" alt="Xbox" title="Xbox" class="platform-icon">
+                        <img src="img/switch.png" alt="Switch" title="Switch" class="platform-icon">
                     </div>
                 </div>
                 <div class="game-card">
-                    <img src="images/game4.jpg" alt="Galaxy Racer">
-                    <h4>Galaxy Racer</h4>
-                    <p>$34.99</p>
+                    <img src="img/Sekiro.jpg" alt="Sekiro Shadows Die Twice">
+                    <h4>Sekiro Shadows Die Twice</h4>
+                    <p>$59.99</p>
                     <div class="platform-icons">
-                        <img src="images/switch.png" alt="Nintendo Switch" title="Nintendo Switch" class="platform-icon">
-                        <img src="images/pc.png" alt="PC" title="PC" class="platform-icon">
+                        <img src="img/PS5-removebg-preview.png" alt="PlayStation" title="PlayStation" class="platform-icon">
+                        <img src="img/PC-removebg-preview.png" alt="PC" title="PC" class="platform-icon">
                     </div>
                 </div>
                 <div class="game-card">
                     <div onclick="toggleCodVersions()" style="cursor:pointer;">
                         <img src="images/game5.jpg" alt="Call of Duty:Black Ops 6">
                         <h4>Call of Duty:Black Ops 6</h4>
-                        <p>$69.99</p>
+                        <p>$77.99</p>
                         <div class="platform-icons">
                             <img src="images/ps5.png" alt="PlayStation" title="PlayStation" class="platform-icon">
                             <img src="images/xbox.png" alt="Xbox" title="Xbox" class="platform-icon">
@@ -179,18 +143,18 @@
                     <div id="cod-versions" style="display:none;">
                         <div class="cod-version">
                             <img src="images/cod-mw.jpg" alt="Modern Warfare">
-                            <span>Modern Warfare</span>
-                            <span>$39.99</span>
+                            <span>Call of Duty:Modern Warfare</span>
+                            <span>$65.99</span>
                         </div>
                         <div class="cod-version">
                             <img src="images/cod-bo.jpg" alt="Black Ops">
-                            <span>Black Ops</span>
-                            <span>$29.99</span>
+                            <span>Call of Duty:Black Ops Cold War</span>
+                            <span>$66.99</span>
                         </div>
                         <div class="cod-version">
                             <img src="images/cod-vanguard.jpg" alt="Vanguard">
-                            <span>Vanguard</span>
-                            <span>$49.99</span>
+                            <span>Call of Duty:Vanguard</span>
+                            <span>$66.99</span>
                         </div>
                     </div>
                 </div>
@@ -222,11 +186,11 @@
                     </div>
                 </div>
                 <div class="game-card">
-                    <img src="images/zelda-totk.jpg" alt="Zelda: Tears of the Kingdom">
-                    <h4>Zelda: Tears of the Kingdom</h4>
-                    <p>$59.99</p>
+                    <img src="img/MarioKartWorld.jpg" alt="Mario Kart World">
+                    <h4>Mario Kart World</h4>
+                    <p>$79.99</p>
                     <div class="platform-icons">
-                        <img src="images/switch.png" alt="Nintendo Switch" title="Nintendo Switch" class="platform-icon">
+                        <img src="img/switch.png" alt="Nintendo Switch" title="Nintendo Switch" class="platform-icon">
                     </div>
                 </div>
                 <div class="game-card">
@@ -248,6 +212,7 @@
     <footer>
         <p>&copy; 2025 CodeSlayer.com, Inc. All rights reserved.</p>
     </footer>
+    <script src="app.js"></script>
 </body>
 
 </html>
