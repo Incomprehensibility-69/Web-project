@@ -18,6 +18,8 @@
                 <a href="#">Games</a>
                 <a href="#">Cart</a>
                 <a href="#">Login</a>
+                <input type="text" id="search" placeholder="Search games..." onkeyup="filterGames()">
+
             </nav>
         </div>
     </header>
@@ -95,6 +97,7 @@
                             <img src="img/LOZ marjora mask.jpg" alt="Majora's Mask">
                             <span>Majora's Mask</span>
                             <span>$29.99</span>
+                            <button onclick="addToCart('LOZ TotK', 69.99)">Add to Cart</button>
                         </div>
                     </div>
         <!--erm actually i dont quite know the price, i just google search lol your more of an
@@ -109,6 +112,7 @@
                         <img src="img/xbox-removebg-preview.png" alt="Xbox" title="Xbox" class="platform-icon">
                         <img src="img/PC-removebg-preview.png" alt="PC" title="PC" class="platform-icon">
                     </div>
+                    <button onclick="addToCart('Mech Battle', 39.99)">Add to Cart</button>
                 </div>
                 <div class="game-card">
                     <img src="img/Pixel Quest.jpg" alt="Pixel Quest">
@@ -119,6 +123,7 @@
                         <img src="img/xbox-removebg-preview.png" alt="Xbox" title="Xbox" class="platform-icon">
                         <img src="img/switch.png" alt="Switch" title="Switch" class="platform-icon">
                     </div>
+                    <button onclick="addToCart('Pixel Quest', 24.99)">Add to Cart</button>
                 </div>
                 <div class="game-card">
                     <img src="img/Sekiro.jpg" alt="Sekiro Shadows Die Twice">
@@ -128,6 +133,7 @@
                         <img src="img/PS5-removebg-preview.png" alt="PlayStation" title="PlayStation" class="platform-icon">
                         <img src="img/PC-removebg-preview.png" alt="PC" title="PC" class="platform-icon">
                     </div>
+                    <button onclick="addToCart('Sekiro Shadows Die Twice', 59.99)">Add to Cart</button>
                 </div>
                 <div class="game-card">
                     <div onclick="toggleCodVersions()" style="cursor:pointer;">
@@ -165,6 +171,7 @@
                     <div class="platform-icons">
                         <img src="images/pc.png" alt="PC" title="PC" class="platform-icon">
                     </div>
+                    <button onclick="addToCart('Space Odyssey', 49.99)">Add to Cart</button>
                 </div>
                 <div class="game-card">
                     <img src="images/elden-ring.jpg" alt="Elden Ring">
@@ -175,6 +182,7 @@
                         <img src="images/xbox.png" alt="Xbox" title="Xbox" class="platform-icon">
                         <img src="images/pc.png" alt="PC" title="PC" class="platform-icon">
                     </div>
+                    <button onclick="addToCart('Elden Ring', 59.99)">Add to Cart</button>
                 </div>
                 <div class="game-card">
                     <img src="images/halo-infinite.jpg" alt="Halo Infinite">
@@ -184,6 +192,7 @@
                         <img src="images/xbox.png" alt="Xbox" title="Xbox" class="platform-icon">
                         <img src="images/pc.png" alt="PC" title="PC" class="platform-icon">
                     </div>
+                    <button onclick="addToCart('Halo Infinite', 54.99)">Add to Cart</button>
                 </div>
                 <div class="game-card">
                     <img src="img/MarioKartWorld.jpg" alt="Mario Kart World">
@@ -192,6 +201,7 @@
                     <div class="platform-icons">
                         <img src="img/switch.png" alt="Nintendo Switch" title="Nintendo Switch" class="platform-icon">
                     </div>
+                    <button onclick="addToCart('Mario Kart World', 79.99)">Add to Cart</button>
                 </div>
                 <div class="game-card">
                     <img src="images/cyberpunk2077.jpg" alt="Cyberpunk 2077">
@@ -202,17 +212,37 @@
                         <img src="images/xbox.png" alt="Xbox" title="Xbox" class="platform-icon">
                         <img src="images/pc.png" alt="PC" title="PC" class="platform-icon">
                     </div>
+                    <button onclick="addToCart('Cyberpunk 2077', 39.99)">Add to Cart</button>
+                </div>
+                <div class="game-card">
+                    <img src="images/retro-rush.jpg" alt="Retro Rush">
+                    <h4>Retro Rush</h4>
+                    <p>$29.99</p>
+                    <div class="platform-icons">
+                        <img src="images/ps5.png" alt="PlayStation" title="PlayStation" class="platform-icon">
+                        <img src="images/xbox.png" alt="Xbox" title="Xbox" class="platform-icon">
+                        <img src="images/pc.png" alt="PC" title="PC" class="platform-icon">
+                    </div>
+                    <button onclick="addToCart('Retro Rush', 29.99)">Add to Cart</button>
                 </div>
         <!--can u help me paste all the img that i havent place ? for the featured game, put
             like the main page,smt liddat, u can refer to the img i've inserted. -->
             </div>
         </section>
+        <div id="cart">
+    <h3>Your Cart</h3>
+    <ul id="cart-items"></ul>
+    <span id="cart-total"></span>
+    <a href="checkout.html">Go to Checkout</a>
+</div>
     </main>
 
     <footer>
         <p>&copy; 2025 CodeSlayer.com, Inc. All rights reserved.</p>
     </footer>
     <script src="app.js"></script>
+    <script src="js/cart.js"></script>
+    <script src="js/search.js"></script>
+    <script src="js/admin.js"></script>
 </body>
-
 </html>

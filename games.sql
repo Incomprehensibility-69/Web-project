@@ -1,0 +1,8 @@
+CREATE TABLE games (
+  game_id INT AUTO_INCREMENT PRIMARY KEY,
+  title VARCHAR(100) NOT NULL,
+  price DECIMAL(6,2) NOT NULL,
+  genre VARCHAR(50),
+  stock INT DEFAULT 0,
+  image_path VARCHAR(255)
+);
