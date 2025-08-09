@@ -1,0 +1,12 @@
+<!-- checkout.html -->
+<h2>Checkout</h2>
+<ul id="checkout-items"></ul>
+<p>Total: $<span id="checkout-total">0.00</span></p>
+
+<form action="process_order.php" method="POST">
+  <input type="text" name="name" placeholder="Your Name" required>
+  <input type="email" name="email" placeholder="Email" required>
+  <input type="hidden" name="cartData" id="cartData">
+  <button type="submit">Place Order</button>
+</form>
+<script src="js/checkout.js"></script>
